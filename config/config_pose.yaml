@@ -6,12 +6,12 @@ downscale_height: 400      # if the input image is larger than this, scale it do
 
 # Comment any of these lines to prevent detection / pose estimation of that object
 weights: {
-    # "cracker":"package://dope/weights/cracker_60.pth",
+    "cracker":"package://dope/weights/cracker_60.pth",
     # "gelatin":"package://dope/weights/gelatin_60.pth",
-    # "meat":"package://dope/weights/meat_20.pth",
+    "meat":"package://dope/weights/meat_20.pth",
     # "mustard":"package://dope/weights/mustard_60.pth",
-    "soup":"package://dope/weights/soup_60.pth",
-    #"sugar":"package://dope/weights/sugar_60.pth",
+    # "soup":"package://dope/weights/soup_60.pth",
+    "sugar":"package://dope/weights/sugar_60.pth",
     # "bleach":"package://dope/weights/bleach_28_dr.pth"
     
     # NEW OBJECTS - HOPE
@@ -147,13 +147,13 @@ model_transforms: {
 # published for visualization in RViz
 # You can use the nvdu_ycb tool to download the meshes: https://github.com/NVIDIA/Dataset_Utilities#nvdu_ycb
 meshes: {
-#    "cracker": "file://path/to/Dataset_Utilities/nvdu/data/ycb/aligned_cm/003_cracker_box/google_16k/textured.obj",
-#    "gelatin": "file://path/to/Dataset_Utilities/nvdu/data/ycb/aligned_cm/009_gelatin_box/google_16k/textured.obj",
-#    "meat":    "file://path/to/Dataset_Utilities/nvdu/data/ycb/aligned_cm/010_potted_meat_can/google_16k/textured.obj",
-#    "mustard": "file://path/to/Dataset_Utilities/nvdu/data/ycb/aligned_cm/006_mustard_bottle/google_16k/textured.obj",
-#    "soup":    "file://path/to/Dataset_Utilities/nvdu/data/ycb/aligned_cm/005_tomato_soup_can/google_16k/textured.obj",
-#    "sugar":   "file://path/to/Dataset_Utilities/nvdu/data/ycb/aligned_cm/004_sugar_box/google_16k/textured.obj",
-#    "bleach":  "file://path/to/Dataset_Utilities/nvdu/data/ycb/aligned_cm/021_bleach_cleanser/google_16k/textured.obj",
+   "cracker": "aligned_m/003_cracker_box/google_16k/textured_m.obj",
+   "gelatin": "aligned_m/009_gelatin_box/google_16k/textured_m.obj",
+   "meat":    "aligned_m/010_potted_meat_can/google_16k/textured_m.obj",
+   "mustard": "aligned_m/006_mustard_bottle/google_16k/textured_m.obj",
+   "soup":    "aligned_m/005_tomato_soup_can/google_16k/textured_m.obj",
+   "sugar":   "aligned_m/004_sugar_box/google_16k/textured_m.obj",
+   "bleach":  "aligned_m/021_bleach_cleanser/google_16k/textured_m.obj",
 }
 
 # optional: If the specified meshes are not in meters, provide a scale here (e.g. if the mesh is in centimeters, scale should be 0.01). default scale: 1.0.
