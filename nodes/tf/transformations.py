@@ -7,9 +7,9 @@ def quaternion_from_matrix(M):
     return r.as_quat()
 
 def quaternion_multiply(p, q):
-    vp = p[:3]
+    vp = np.array(p[:3])
     wp = p[3]
-    vq = q[:3]
+    vq = np.array(q[:3])
     wq = q[3]
 
     vpq = wp * vq + wq * vp + np.cross(vp, vq)

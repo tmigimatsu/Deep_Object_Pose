@@ -19,7 +19,9 @@ class TimeSynchronizer:
         self._thread = None
 
         self._redis = ctrlutils.RedisClient(
-            port=rospy.ARGS.redis_port, password=rospy.ARGS.redis_pass
+            host=rospy.ARGS.redis_host,
+            port=rospy.ARGS.redis_port,
+            password=rospy.ARGS.redis_pass,
         )
         redis_pipe = self._redis.pipeline()
         redis_pipe.get("rgbd::camera_0::color::intrinsic")

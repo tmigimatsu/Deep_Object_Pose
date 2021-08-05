@@ -8,7 +8,7 @@ class Position:
         self.z = 0
 
     def _array(self):
-        return np.array([x, y, z])
+        return np.array([self.x, self.y, self.z])
 
 
 class Quaternion:
@@ -19,7 +19,7 @@ class Quaternion:
         self.w = 0
 
     def _array(self):
-        return np.array([x, y, z, w])
+        return np.array([self.x, self.y, self.z, self.w])
 
 
 class Pose:
@@ -32,4 +32,3 @@ class PoseStamped:
     def __init__(self):
         self.header = None
         self.pose = Pose()
-        pass

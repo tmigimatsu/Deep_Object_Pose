@@ -12,6 +12,9 @@ class Rgba:
 class Marker:
     ADD = "add"
     CUBE = "cube"
+    TEXT_VIEW_FACING = "text_view_facing"
+    MESH_RESOURCE = "mesh_resource"
+    DELETE = "delete"
 
     def __init__(self):
         self.header = None
